@@ -1,0 +1,11 @@
+# Executáveis do Windows
+*.exe
+
+# Arquivos de objeto (gerados em compilações maiores)
+*.o
+*.obj
+
+# Pastas de build ou temporários do VS Code
+.vscode/
+bin/
+out/
