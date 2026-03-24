@@ -26,13 +26,14 @@ def main():
     entrada_anterior = entrada
 
     while (entrada >= 0):
+
+        lista_positivos.append(entrada)
+
         entrada = int(input())
 
         if entrada < entrada_anterior:
-            print("Lista não ordenada.")
+            print("Valor não ordenada.")
             break
-
-        lista_positivos.append(entrada)
 
         entrada_anterior = entrada
 
@@ -40,7 +41,7 @@ def main():
     procurado = int(input())
     resultado = binary_Search(procurado, len(lista_positivos))
 
-    if resultado > 0:
+    if resultado >= 0:
         print(f"O número está na posição: {resultado}")
     else:
         print("O valor não está na lista.")
