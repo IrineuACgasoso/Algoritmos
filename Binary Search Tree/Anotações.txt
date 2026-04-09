@@ -1,0 +1,30 @@
+BST
+
+(1) Busca
+                -> O(n) - pior caso
+(2) Inserção
+
+(3) Deleção
+
+    1. Folha:
+    - Trivial.
+
+    2. Nó com 1 filho:
+    - Conectar o filho ao pai do pai
+         O1                O1 
+        / \               / \
+           X2       =>       O3
+            \
+             O3 
+
+    3. Nó com 2 filhos:
+    - Remover o mínimo do filho à direita do pai removido;
+    - Sobrescrever o valor do pai com o desse mínimo removido.
+         O1                       O1  
+        /  \                     /  \ 
+            X2                       O5
+           /  \         =>          /  \
+          O3   O4                  O3   O4 
+              /
+             O5
+        (mínimo de O4)    
