@@ -1,4 +1,4 @@
-BST
+**BST**
 
 (1) Busca
                 -> O(n) - pior caso
@@ -27,4 +27,16 @@ BST
           O3   O4                  O3   O4 
               /
              O5
-        (mínimo de O4)    
+        (mínimo de O4) 
+
+
+
+
+**Árvores AVL**
+
+Altura AVL c/ *n* nós
+    O(lg*n*)
+         ___________________________
+Nó AVL: | Left | Val | *bf* | Right |
+        |______|_____|______|_______|
+
